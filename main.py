@@ -18,7 +18,7 @@ def get_numbers():
 
 
 
-answer = input('Введите "y" если будем считать рациональные числа или "n" - если клмплексные: ')
+answer = input('Введите "y" если будем считать рациональные числа или "n" - если комплексные: ')
 if answer == 'y':
     result = rat.calculator_rational(get_numbers())
     print(f'{x} {znak} {y} = {result}')
