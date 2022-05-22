@@ -1,11 +1,7 @@
-
-def complex_num(x, y, action):
-    a = x.replace('j', '')
-    a = a.split()
-    a = complex(int(a[0]), int(a[2]))
-    b = y.replace('j', '')
-    b = b.split()
-    b = complex(int(b[0]), int(b[2]))
+def complex_num(data):
+    x, y, action = data
+    a = complex(x)
+    b = complex(y)
     if action == '+':
         return a + b
     elif action == '-':
@@ -17,4 +13,3 @@ def complex_num(x, y, action):
     else:
         print('Ошибка ввода данных')
         
-#print(complex_num('5 + 10j', '5 + 10j', '+'))
